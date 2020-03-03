@@ -1,3 +1,21 @@
+/*Reglas ----> el coonjunto de un selector
+selectores
+declaraciones
+propiedades
+valores*/
+
 header {
     background: pink;
 }
+
+/* Selector de etiqueta: Header, Section, Article, Nav, Etc... */
+/* Selector descendente: */
+/*body header div nav ol li a */
+
+/*Selector de Clase*/
+/* para identificar una clase (class) se coloca un punto y el nombre de la clase Ej:*/
+/*.link*/
+
+/*Selector de ID*/
+/* para identificar un ID se coloca un numeral ó hash Ej:*/
+/* #portafolio*/

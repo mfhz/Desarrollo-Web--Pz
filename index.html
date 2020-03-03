@@ -16,61 +16,63 @@
      -->
 
     <body>
-       <header><!--style="color: red; background: blue;" Una forma de realizar estilos a la hoja HTML añadiendo dentro de la etiqueta que queremos ver el diseño-->
+       <header class="header"><!--style="color: red; background: blue;" Una forma de realizar estilos a la hoja HTML añadiendo dentro de la etiqueta que queremos ver el diseño-->
             <div>
-                <figure>
+                <figure class="logo">
                     <img src="images/logo.png" alt="Logo de http://www.google.com">
                 </figure>
-                <nav>
+                <nav class="menu">
                     <ol>
                         <li>
-                            <a href="./portafolio/index.html">Portafolio</a>
+                            <a class="link" href="./portafolio/index.html">Portafolio</a>
                         </li>
                         <li>
-                            <a href="#eventos">Experiencia</a>
+                            <a class="link" href="#eventos">Experiencia</a>
                         </li>
                         <li>
-                            <a href="#contactos">Trabajemos juntos</a>
+                            <a class="link" href="#contactos">Trabajemos juntos</a>
                         </li>
                     </ol>                        
                 </nav>
             </div>
         </header>
-        <section>
+        <section class="hero">
             <h1>
                 Hola! Soy <strong>Martín Henriquez</strong> <br> aprendiz desarrollador <br> <strong>Full-Stack</strong>
             </h1>
             <img src="images/hero.jpg" width="500" height="300" alt="Imagen principal del sitio"> 
         </section>
-        <section id="portafolio">
+        <section id="portafolio" class="portfolio">
             <h2>Portafolio (Proyectos Destacados)</h2>
-            <article>
-                <h3>Platzi Video</h3>
-                <h6>React Native / React</h6>
-                <p><small><strong>Fecha:</strong> 01/07/2020</small></p>
-                <p><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque excepturi a iusto esse. Voluptatum sed
+            <article class="project">
+                <h3 class="project-title">Platzi Video</h3>
+                <h6 class="project-course">React Native / React</h6>
+                <p class="project-date"><small><strong>Fecha:</strong> 01/07/2020</small></p>
+                <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+                <p class="project-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque excepturi a iusto esse. Voluptatum sed
                      nemo amet veniam facilis molestiae dicta nihil ratione voluptatem
                       nulla, magnam accusamus voluptatibus, at impedit.</p>
-                <img src="images/platzi-video-react-native.png" alt="Proyecto del curso React Native" width="500">
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="images/platzi-video-react-native.png" alt="Proyecto del curso React Native" width="500">
+                </figure>
             </article>
         </section>
         <section id="eventos">
             <h2>Más sobre mi experiencia</h2>
-            <article>
-                <figure>
-                    <img src="images/platzi-conf.jpg" width="500" height="300"/> 
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi-conf.jpg" width="500" height="300"/> 
                 </figure>
-                <h3>PlatziConf México 2018</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus laborum blanditiis
+                <h3 class="event-title">PlatziConf México 2018</h3>
+                <p class="event-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus laborum blanditiis
                     molestias voluptatem ad dolores, voluptatum ex facere odit
                     quis deleniti quae, laudantium quas dignissimos, eum sint perspiciatis expedita quos?</p>
-                <a href="https://www.youtube.com" target="_blank">Ver Plática</a> 
+                <a class="event-url" href="https://www.youtube.com" target="_blank">Ver Plática</a> 
             </article>
         </section>
 
-        <section id="contactos">
-            <form action="/suscripcion/">
+        <section id="contactos" class="contact">
+            <form class="form-email" action="/suscripcion/">
                 <h3>¿Creamos algo juntos?</h3>
                 <!--  <label for="email">Como un placeholder</label> -->
                 <input type="text" placeholder="Déjame tu email" id="email">
@@ -78,7 +80,7 @@
                 <button>Enviar!</button>
             </form>
         </section>
-        <footer>footer</footer>
+        <footer class="footer">footer</footer>
 
     </body>
 
