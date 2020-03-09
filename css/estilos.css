@@ -22,6 +22,7 @@ header {
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -49,6 +50,17 @@ h1 strong {
     background-size: 500px 300px;
     background-repeat: no-repeat;
     background-position-x: right;
+}
+
+.portfolio {
+    background: #FAFAFA;
+}
+
+.project {
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: red;
 }
 
 .project-details {
