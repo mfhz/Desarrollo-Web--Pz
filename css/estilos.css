@@ -44,11 +44,19 @@ h1 strong {
 
 .hero {
     height: 300px;
-    background-image: '../images/hero.jpg';
+    background-image: url('../Images/hero.jpg');
     background-color: #1b2127;
     background-size: 500px 300px;
     background-repeat: no-repeat;
     background-position-x: right;
+}
+
+.project {
+    border: 1px solid gray;
+    border-radius: 10px;
+    /*border-color: red;
+    border-width: 15px;
+    border-style: solid;*/
 }
 
 .project-details {
