@@ -4,10 +4,6 @@ declaraciones
 propiedades
 valores*/
 
-header {
-    background: pink;
-}
-
 /* Selector de etiqueta: Header, Section, Article, Nav, Etc... */
 /* Selector descendente: */
 /*body header div nav ol li a */
@@ -76,11 +72,45 @@ h1 strong {
     width: 500px;
 }
 
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+figure {
+    margin: 0;
+}
+
+
 .header {
     background-color: #1b2127;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
 }
 
 .header a {
     color: white;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    height: inherit;
+    padding: 0 10px;
 }
+
+.menu {
+    height: inherit;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li {
+    height: inherit;    
+}
+
