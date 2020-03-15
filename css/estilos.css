@@ -252,22 +252,22 @@ figure {
 
 .social-link.twitter {
     background-image: url('../Images/twitter.svg');
-    background-size: 50px 50px;
+    background-size: 100%;
 }
 
 .social-link.facebook {
     background-image: url('../Images/facebook.svg');
-    background-size: 50px 50px;
+    background-size: 100%;
 }
 
 .social-link.github {
     background-image: url('../Images/github.svg');
-    background-size: 50px 50px;
+    background-size: 100%;
 }
 
 .social-link.instagram {
     background-image: url('../Images/instagram.svg');
-    background-size: 50px 50px;
+    background-size: 100%;
 }
 
 .form-email {
@@ -320,7 +320,9 @@ figure {
 /*Desktop first que se empiece desde el MQ mas grande */
 
 @media screen and (max-width: 1366px) {
-     
+     .container {
+         padding: 0 1em;
+     }
 }
 
 @media screen and (max-width: 1024px) {
@@ -421,6 +423,34 @@ figure {
     .event {
         margin-bottom: .8em;
     }
+
+    .contact {
+        height: auto;
+        padding: 1.5em 0;
+        display: block;
+        text-align: center;
+    }
+
+    .form-email button {
+        margin: 1em auto;
+    }
+
+    .form-email h3 {
+        margin-top: 0;
+    }
+
+    .social-link {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer {
+        display: block;
+        text-align: center;
+        /* padding: .2em; Esta opcion tambien sirve para ajustar el footer pero se puede con bordes tambien*/
+        border: 1px solid transparent;
+    }
+    
      
 }
 
