@@ -187,8 +187,8 @@ figure {
 }
 
 .event {
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     border-radius: 10px;
     overflow: hidden;
     flex-shrink: 0;
@@ -387,6 +387,16 @@ figure {
     .project-course, .project-date, .project-url {
         margin: .3em 0;
     }
+
+    .event {
+        width: auto;
+        flex-shrink: initial;
+    }
+
+    .event img {
+        width: 100%;
+    }
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -396,6 +406,20 @@ figure {
 
     .project-descripcion {
         margin: 1em 0;
+    }
+
+    .event-detail {
+        /* 1em = 16px global */
+        margin: -2em .8em .8em;
+        padding: 1em;
+    }
+
+    .event-description {
+        margin-bottom: 1.3em;
+    }
+
+    .event {
+        margin-bottom: .8em;
     }
      
 }
