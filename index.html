@@ -157,16 +157,42 @@
             </div>
         </footer>
         <script>
-            console.log('HOla mundo')
-            const menu = document.querySelector('.menu')
-            const burgerButton = document.querySelector('#burger-menu')
-            burgerButton.addEventListener('click', hideShow)
-            
 
+            //Se crea varaible para guardar el tamaño de la pantalla menor que 768
+            const ipad = window.matchMedia('screen and (max-width: 767px)');
+
+            // Guarda el elemento en una variable
+            const menu = document.querySelector('.menu')
+
+            // Guarda el elemento en una variable
+            const burgerButton = document.querySelector('#burger-menu')
+
+            // Escucha los cambios de la variable ipad y si cumple la condicion lanza la funcion validation
+            ipad.addListener(validation);
+
+            // Funcion con un parametro x, si cumple el tamaño de pantalla establecido escucha cuando presionan el boton y al presionar lanza otra funcion llamada hideShow
+            // Ademas de hacer estas validaciones optimizamos recursos a la maquina
+            function validation(event) {
+                // Condicional verificando si el tamaño acordado cumple
+                if (event.matches) {
+                    //SI CUMPLE --> habilita la escucha del botón
+                    burgerButton.addEventListener('click', hideShow)
+                    // console.log(event.matches);    
+                }
+                else {
+                    //si NO CUMPLE --> Quita la escucha del botón
+                    burgerButton.addEventListener('click', hideShow)
+                }            
+            }            
+
+            // Funcion al presionar el boton muestra y oculta el menu
             function hideShow() {
+                // Condicional verfiica si la etiqueta o el elemento tiene la clase "is-active"
                 if (menu.classList.contains('is-active')) {
+                    //Si la tiene la quita
                     menu.classList.remove('is-active')                    
                 } else {
+                    //Si no la tiene la coloca
                     menu.classList.add('is-active')                    
                 }                
             }
