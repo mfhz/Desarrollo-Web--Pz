@@ -167,6 +167,11 @@
             // Guarda el elemento en una variable
             const burgerButton = document.querySelector('#burger-menu')
 
+            //Esta parte es muy importante ya que sin invocar la funcion validation pasandole el parametro IPAD a la hora de abrirlo en un celular que por defecto su matchMedia es true sin esta
+            // validacion el menu con el boton no funcionaria. 
+            // console.log(ipad.matches);
+            validation(ipad);
+
             // Escucha los cambios de la variable ipad y si cumple la condicion lanza la funcion validation
             ipad.addListener(validation);
 

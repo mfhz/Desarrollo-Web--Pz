@@ -572,6 +572,10 @@ figure {
         border: 1px solid transparent;
     }
 
+    .portfolio {
+        padding: 0;
+    }
+
     h1 {
         font-size: 1.5em;
     }
